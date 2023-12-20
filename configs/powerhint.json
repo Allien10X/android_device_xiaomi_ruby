@@ -132,8 +132,8 @@
       "DefaultIndex": 0
     },
     {
-      "Name": "FGSchedtuneBoost",
-      "Path": "/dev/stune/foreground/schedtune.boost",
+      "Name": "FGUclampMin",
+      "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
       "Values": [
         "100",
         "10"
@@ -141,8 +141,8 @@
       "ResetOnInit": true
     },
     {
-      "Name": "TASchedtuneBoost",
-      "Path": "/dev/stune/top-app/schedtune.boost",
+      "Name": "TAUclampMin",
+      "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
       "Values": [
         "100",
         "7",
@@ -151,8 +151,8 @@
       "ResetOnInit": true
     },
     {
-      "Name": "CDSchedtuneBoost",
-      "Path": "/dev/stune/camera-daemon/schedtune.boost",
+      "Name": "CDUclampMin",
+      "Path": "/dev/cpuctl/camera-daemon/cpu.uclamp.min",
       "Values": [
         "100",
         "0"
