@@ -227,7 +227,7 @@
       "Path": "/dev/stune/foreground/schedtune.boost",
       "Values": [
         "100",
-        "0"
+        "10"
       ],
       "ResetOnInit": true
     },
