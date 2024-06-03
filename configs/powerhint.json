@@ -2,9 +2,9 @@
   "Nodes": [
     {
       "Name": "CPULittleClusterMaxFreq",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq",
+      "Path": "/proc/ppm/policy/cluster_0_max_freq",
       "Values": [
-        "9999999",
+        "-1",
         "2000000",
         "1903000",
         "1800000",
@@ -27,7 +27,7 @@
     },
     {
       "Name": "CPULittleClusterMinFreq",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
+      "Path": "/proc/ppm/policy/cluster_0_min_freq",
       "Values": [
         "2000000",
         "1903000",
@@ -45,15 +45,15 @@
         "740000",
         "650000",
         "500000",
-        "0"
+        "-1"
       ],
       "ResetOnInit": true
     },
     {
       "Name": "CPUBigClusterMaxFreq",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq",
+      "Path": "/proc/ppm/policy/cluster_1_max_freq",
       "Values": [
-        "9999999",
+        "-1",
         "2600000",
         "2400000",
         "2275000",
@@ -76,7 +76,7 @@
     },
     {
       "Name": "CPUBigClusterMinFreq",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq",
+      "Path": "/proc/ppm/policy/cluster_1_min_freq",
       "Values": [
         "2600000",
         "2400000",
@@ -94,7 +94,7 @@
         "910000",
         "740000",
         "650000",
-        "0"
+        "-1"
       ],
       "ResetOnInit": true
     },
@@ -202,15 +202,33 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "TASchedtuneBoost",
+      "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "7"
+      "Value": "1407000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 0,
+      "Value": "-1"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "1430000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "TAUclampMin",
+      "Duration": 0,
+      "Value": "50"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 3000,
-      "Value": "9999999"
+      "Value": "-1"
     },
     {
       "PowerHint": "LAUNCH",
@@ -222,7 +240,7 @@
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 3000,
-      "Value": "9999999"
+      "Value": "-1"
     },
     {
       "PowerHint": "LAUNCH",
