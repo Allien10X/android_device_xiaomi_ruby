@@ -136,7 +136,7 @@
       "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
       "Values": [
         "100",
-        "10"
+        "0"
       ],
       "ResetOnInit": true
     },
@@ -145,8 +145,8 @@
       "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
       "Values": [
         "100",
-        "7",
-        "1"
+        "50",
+        "0"
       ],
       "ResetOnInit": true
     },
