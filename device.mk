@@ -118,7 +118,7 @@ PRODUCT_PACKAGES += \
 
 # Parts
 PRODUCT_PACKAGES += \
-    parts
+    XiaomiParts
 
 # Dexpreopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
