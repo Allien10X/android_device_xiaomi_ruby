@@ -211,6 +211,12 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 0,
+      "Value": "-1"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
       "Value": "1407000"
@@ -259,13 +265,13 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "FGSchedtuneBoost",
+      "Node": "FGUclampMin",
       "Duration": 3000,
       "Value": "100"
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "TASchedtuneBoost",
+      "Node": "TAUclampMin",
       "Duration": 3000,
       "Value": "100"
     },
@@ -283,7 +289,7 @@
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
-      "Node": "CDSchedtuneBoost",
+      "Node": "CDUclampMin",
       "Duration": 1000,
       "Value": "100"
     },
