@@ -60,6 +60,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl:32
 
 PRODUCT_PACKAGES += \
+    android.hardware.audio@7.0.vendor:64
+
+PRODUCT_PACKAGES += \
     MtkInCallService
 
 PRODUCT_PACKAGES += \
